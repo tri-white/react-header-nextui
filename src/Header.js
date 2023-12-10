@@ -26,8 +26,15 @@ class Header extends Component {
           <div className="PageNow">01</div>
           <div className="Line1"></div>
           <div className="Group7">
-            <div className="SolutionsAndServices">Solutions and services<br /></div>
-            <img className="Union" src={require("./img/Union.png")} />
+            <Link
+        isExternal
+        href="https://github.com/nextui-org/nextui"
+        className="SolutionsAndServices"
+      >
+        Solutions and services
+        <img className="Union" src={require("./img/Union.png")} />
+
+      </Link>
           </div>
           <div className="Rectangle37" />
           <div className="Ellipse16" >
