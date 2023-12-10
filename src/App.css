@@ -302,7 +302,7 @@
     left: 32px;
     top: 640px;
     position: absolute;
-    background: white;
+    padding: 25px auto;
     box-shadow: 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
     border-radius: 10px;
     justify-content: center;
@@ -318,6 +318,16 @@
     font-family: 'Roboto';
     font-weight: 400;
     word-wrap: break-word;
+    margin: 30px;
+  }
+  
+  .MoreButtonText{
+    width:150px;
+    background-color: white;
+    color:black;
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 400;
   }
   
   .Menu {

@@ -10,8 +10,12 @@ import GalleryPage from "./Gallery";
 import FeaturesPage from "./Features";
 import {BrowserRouter, useNavigate, Routes, Route} from 'react-router-dom';
 import {NextUIProvider} from '@nextui-org/react';
+import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
+
 function App() {
   const navigate = useNavigate();
+  const {isOpen, onOpen, onOpenChange} = useDisclosure();
+
 return (
  
       <NextUIProvider navigate={navigate}>

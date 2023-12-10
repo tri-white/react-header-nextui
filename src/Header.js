@@ -3,6 +3,8 @@ import './App.css';
 import {Select, SelectSection, SelectItem} from "@nextui-org/react";
 import {Link} from "@nextui-org/react";
 import {NextUIProvider} from "@nextui-org/react";
+import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
+import MoreModal from "./components/MoreModal";  // Import the MoreModal component
 
 class Header extends Component {
      render() {
@@ -51,8 +53,9 @@ class Header extends Component {
         </Link>
       
         <div className="ButtonMore">
-          <div className="More">More</div>
+          <div className="More"><MoreModal/></div>
         </div>
+        
         <div className="Menu">
         <Link href="/about" color="foreground">About</Link>
             <Link href="/features" color="foreground">Features</Link>
