@@ -435,8 +435,9 @@
   width: 21px;
   height: 21px;
   position: absolute;
-  left: 1469px;
+  left: 1460px;
   top: 26px;
+  background-color: transparent;
 }
 
 .IconPhone {

@@ -1,12 +1,13 @@
 import React, {Component} from "react";
 import './App.css';
-import {Select, SelectSection, SelectItem} from "@nextui-org/react";
 import {NextUIProvider} from "@nextui-org/react";
 import MoreModal from "./components/MoreModal"; 
 import PhonePopover from "./components/PhonePopover"; 
 import {SearchIcon} from "./img/icon2.png"
 import {Link} from "@nextui-org/react"
 import Searchbar from "./components/Searchbar";
+import LangPicker from "./components/LangPicker";
+import BurgerMenu from "./components/BurgerMenu";
 class Header extends Component {
      render() {
         return(
@@ -70,17 +71,9 @@ class Header extends Component {
           <Searchbar />
 
         <PhonePopover />
-
-        <img className="IconBurger" src={require("./img/icon1.png")} />
-
-        <Select className="Language" defaultSelectedKeys={["en"]}>
-          <SelectItem key="en" value="En">
-            En
-          </SelectItem>
-          <SelectItem key="ukr" value="Ukr">
-            Ukr
-          </SelectItem>
-        </Select>
+          <BurgerMenu/>
+        <LangPicker />
+        
        </div> 
         );
      }
