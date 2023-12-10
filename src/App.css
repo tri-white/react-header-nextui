@@ -101,6 +101,7 @@
     position: absolute;
     border-radius: 9999px;
     border: 1px white solid;
+    cursor: pointer;
   }
   
   .Ellipse8 {
@@ -111,6 +112,8 @@
     position: absolute;
     border-radius: 9999px;
     border: 2px white solid;
+    cursor: pointer;
+
   }
   
   .Vector {
@@ -183,6 +186,7 @@
     background: #005AAA;
     border-radius: 9999px;
     border: 2px white solid;
+    cursor: pointer;
   }
   .playButton{
     padding: auto;
@@ -451,20 +455,22 @@
 
 
 .VectorLeft, .VectorRight{
+  cursor: pointer;
+
     position:absolute;
     width:12.61px;
     height:25.16px;
     top:726px;
-
 }
 
 .VectorLeft{
     left: 648px;
-
+    cursor: pointer;
 }
 
 .VectorRight{
     left:736px;
+    cursor: pointer;
 }
 
 
