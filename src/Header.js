@@ -3,8 +3,8 @@ import './App.css';
 import {Select, SelectSection, SelectItem} from "@nextui-org/react";
 import {Link} from "@nextui-org/react";
 import {NextUIProvider} from "@nextui-org/react";
-import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
-import MoreModal from "./components/MoreModal";  // Import the MoreModal component
+import MoreModal from "./components/MoreModal"; 
+import PhonePopover from "./components/PhonePopover"; 
 
 class Header extends Component {
      render() {
@@ -64,8 +64,10 @@ class Header extends Component {
             <Link href="/team" color="foreground">Team</Link>
         </div>
         <img className="IconSearch"  src={require("./img/icon2.png")} />
-        <img className="IconPhone" src={require("./img/icon3.png")} />
+
+        <PhonePopover />
         <img className="IconBurger" src={require("./img/icon1.png")} />
+
         <Select className="Language" defaultSelectedKeys={["en"]}>
           <SelectItem key="en" value="En">
             En
