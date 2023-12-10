@@ -1,15 +1,18 @@
 import React, {Component} from "react";
 import './App.css';
 import {Select, SelectSection, SelectItem} from "@nextui-org/react";
-import {Link} from "@nextui-org/react";
 import {NextUIProvider} from "@nextui-org/react";
 import MoreModal from "./components/MoreModal"; 
 import PhonePopover from "./components/PhonePopover"; 
-
+import {SearchIcon} from "./img/icon2.png"
+import {Link} from "@nextui-org/react"
+import Searchbar from "./components/Searchbar";
 class Header extends Component {
      render() {
         return(
+
         <div className="Header91">
+          
         <div className="Header">
           <img className="Rectangle1"  src={require("./img/rectangle-1.png")} />
           <img className="Rectangle2" src={require("./img/rectangle-2.png")} />
@@ -63,9 +66,11 @@ class Header extends Component {
             <Link href="/gallery" color="foreground">Gallery</Link>
             <Link href="/team" color="foreground">Team</Link>
         </div>
-        <img className="IconSearch"  src={require("./img/icon2.png")} />
+        
+          <Searchbar />
 
         <PhonePopover />
+
         <img className="IconBurger" src={require("./img/icon1.png")} />
 
         <Select className="Language" defaultSelectedKeys={["en"]}>

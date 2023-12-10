@@ -428,6 +428,7 @@
   left: 1360px; 
   top: 26px;
   position: absolute;
+  cursor: pointer;
 }
 
 .IconBurger {
@@ -465,3 +466,10 @@
     left:736px;
 }
 
+
+.custom-searchbar {
+  margin-top: 71.87px;
+  width:250px;
+  right:0px;
+  position:absolute;
+}
